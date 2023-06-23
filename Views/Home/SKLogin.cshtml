@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Skilled Worker";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="swim-content">
+        <div class="container">
+            <div>
+                <center>
+                    <h2>Skilled Worker Login</h2><br />
+                    <p><input type="text" id="txtCode" name="txtCode" placeholder="Username"/></p><br />
+                    <p><input type="text" id="txtCode" name="txtCode" placeholder="Password"/></p><br />
+                    <br />
+                </center>
+                <div>
+                    <p align="center"><input onclick="location.href='@Url.Action("SKDash")'" class="btn btn-primary btn-md" value="Login" /></p>
+                    <p align="center"><input onclick="location.href='@Url.Action("SKReg")'" class="btn btn-primary btn-md" value="Register" /></p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>
+

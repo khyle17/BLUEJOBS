@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Skilled Worker";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="swim-content">
+        <div class="container">
+            <div>
+                <center>
+                    <h2>We're excited to help you find your next blue-collar job! Please select your skills from the list below. You can choose one or more skills that best match your experience and interests.</h2><br />
+                    <p><input type="checkbox" id="txtCode" name="txtCode" />Carpentry</p>
+                    <p><input type="checkbox" id="txtCode" name="txtCode" />Construction</p>
+                    <p><input type="checkbox" id="txtCode" name="txtCode" />Electrical</p>
+                    <p><input type="checkbox" id="txtCode" name="txtCode" />Welding</p>
+                    <p><input type="checkbox" id="txtCode" name="txtCode" />Plumbing</p>
+                    <p><input type="checkbox" id="txtCode" name="txtCode" />Automotive</p>
+                    <p><input type="checkbox" id="txtCode" name="txtCode" />Cleaning</p>
+                    <p><input type="checkbox" id="txtCode" name="txtCode" />Roofing</p>
+                    <p><input type="checkbox" id="txtCode" name="txtCode" />Landscaping</p>
+                    <br />
+                </center>
+                <div>
+                    <p align="center"><input onclick="location.href='@Url.Action("SKDash")'" class="btn btn-primary btn-md" value="Create Account" /></p>
+                    <p align="center"><input onclick="location.href='@Url.Action("SKReg")'" class="btn btn-primary btn-md" value="Back" /></p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>
+

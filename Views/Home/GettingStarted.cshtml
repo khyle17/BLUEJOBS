@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Getting Started";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="swim-content">
+        <div class="container">
+            <div>
+                <center><h1 id="title">Welcome to BlueJobs!</h1></center>
+                <center><p class="lead">
+    To get started, please let us know what kind of
+    user you are by selecting from the options
+    below.
+</p></center>
+                <div>
+                    <p align="center"><input onclick="location.href='@Url.Action("SKLogin")'" class="btn btn-primary btn-md" value="Skilled Worker" /></p>
+                    <p align="center"><input onclick="location.href='@Url.Action("SSLogin")'" class="btn btn-primary btn-md" value="Service Seeker" /></p>
+                    <p align="center"><input onclick="location.href='@Url.Action("IALogin")'" class="btn btn-danger btn-md" value="Industry/Agency" /></p>
+                    <p align="center"><input onclick="location.href='@Url.Action("BLogin")'" class="btn btn-dark btn-md" value="Barangay" /></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Service Seeker";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="swim-content">
+        <div class="container">
+            <div>
+                <center>
+                    <h1>Welcome to BlueJobs!</h1><br />
+                                                 <p>
+                                                     We're excited to help you connect with skilled workers in your local area. Whether you're looking to hire skilled workers for your business or find your next blue-collar job, our platform makes it easy and convenient. We can't wait to see how BlueJobs can help you achieve your goals. Let's get started!
+                                                 </p><br />
+                    <br />
+                </center>
+                <div>
+                    <p align="center"><input onclick="location.href='@Url.Action("SSReg")'" class="btn btn-primary btn-md" value="Next" /></p>
+                    <p align="center"><input onclick="location.href='@Url.Action("SSLogin")'" class="btn btn-primary btn-md" value="Back" /></p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Service Seeker Register";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="swim-content">
+        <div class="container">
+            <div>
+                <center>
+                    <h2>Create an Account</h2><br />
+                    <p><input type="text" id="txtCode" name="txtCode" placeholder="First Name" /></p><br />
+                    <p><input type="text" id="txtCode" name="txtCode" placeholder="Last Name" /></p><br />
+                    <p><input type="text" id="txtCode" name="txtCode" placeholder="Phone Number" /></p><br />
+                    <p><input type="text" id="txtCode" name="txtCode" placeholder="Address" /></p><br />
+                    <p><input type="text" id="txtCode" name="txtCode" placeholder="Email Address" /></p><br />
+                    <p><input type="text" id="txtCode" name="txtCode" placeholder="Password" /></p><br />
+                    <br />
+                </center>
+                <div>
+                    <p align="center"><input onclick="location.href='@Url.Action("SSDash")'" class="btn btn-primary btn-md" value="Create Account" /></p>
+                    <p align="center"><input onclick="location.href='@Url.Action("SSLogin0")'" class="btn btn-primary btn-md" value="Back" /></p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>
+
